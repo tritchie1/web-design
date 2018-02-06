@@ -12,11 +12,17 @@
             
         
         document.write("<h1>Adventure Game 3.0</h1>");
+//starting questions
+        var playerInfo = {
+            playerName:"",
+            playerLocation:"",
+        }
+        playerInfo.playerName = prompt("what is your name?");
+        playerInfo.playerLocation = prompt("where are you from?");
         start();
-        function start(){
-            var playerName = prompt("what is your name?");
         
-        alert("Welcome "+ playerName +"! good luck!!");
+        function start(){
+        alert("Welcome "+ playerInfo.playerName +"! good luck!!");
         
         var startgame = confirm("are you ready to begin?");
             
@@ -27,6 +33,7 @@
                 alert("goodbye");
             }
         }
+    //forest function
         function forest(){
         
         var beginAdv = prompt("You and your family have been chased out of your city into the forest. Your most prized possesion is taken from you by the evil nabal. do you go south back to the city to get your prized possesion or north further away from the city.");
@@ -55,6 +62,7 @@
             forest();
         }
         }
+//mike function
         function mike(){
         
             var choice = prompt("you sit outside the city waiting for nightfall. you successfully sneak in and see a troll laying on the floor do you continue and ignore the sleeping troll or kill him?");
