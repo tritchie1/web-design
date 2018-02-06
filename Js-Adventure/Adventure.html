@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure is out there!!</title>
+
+</head>
+
+<body>
+    <script>
+            
+        
+        document.write("<h1>Adventure Game 3.0</h1>");
+        start();
+        function start(){
+            var playerName = prompt("what is your name?");
+        
+        alert("Welcome "+ playerName +"! good luck!!");
+        
+        var startgame = confirm("are you ready to begin?");
+            
+            if(startgame == true){
+                forest();
+            }
+            else{
+                alert("goodbye");
+            }
+        }
+        function forest(){
+        
+        var beginAdv = prompt("You and your family have been chased out of your city into the forest. Your most prized possesion is taken from you by the evil nabal. do you go south back to the city to get your prized possesion or north further away from the city.");
+        
+        if(beginAdv == "south"){
+            var city = prompt("you go back to the city and see guards everywhere do you wait until night and sneak in or try to bribe nabal?");
+                if(city == "wait"){
+                    mike();
+                }
+                else if(city == "bribe" || "bribe him"){
+                    alert("You aproach nabal with all you precious treasures. when you try to bribe him he attacks you and takes all of your belongings and are forced back to the forest");
+                    forest();
+                    
+        }
+            else{
+                alert("invalid entry amigo")
+                forest();
+            }
+                
+        }
+        else if (beginAdv == "north"){
+            var deeper = prompt("you continue deeper in the forest and find a path leading to the east and a river running to the north and a cliff on the west");
+        }
+        else{
+            alert("invalid entry");
+            forest();
+        }
+        }
+        function mike(){
+        
+            var choice = prompt("you sit outside the city waiting for nightfall. you successfully sneak in and see a troll laying on the floor do you continue and ignore the sleeping troll or kill him?");
+            
+        if(choice == "ignore" || "ignore him"){
+            alert("You walk past nabal and see ")
+        }
+        else if(choice == "kill" || "kill him"){
+            var dead = prompt("you smite off the trolls head with his own sword. You continue down a corridor and pass a workroom do you go in the workroom or continue on?");
+        }
+        
+        
+            else{
+                mike()
+            }
+        }
+        
+        
+        
+        
+    </script>
+</body>
+</html>
