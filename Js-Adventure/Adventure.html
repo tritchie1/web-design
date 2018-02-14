@@ -43,7 +43,7 @@
                 if(city == "wait"){
                     mike();
                 }
-                else if(city == "bribe" || "bribe him"){
+                else if(city == "bribe"){
                     alert("You aproach nabal with all you precious treasures. when you try to bribe him he attacks you and takes all of your belongings and are forced back to the forest");
                     forest();
                     
@@ -54,12 +54,25 @@
             }
                 
         }
+            
         else if (beginAdv == "north"){
             var deeper = prompt("you continue deeper in the forest and find a path leading to the east and a river running to the north and a cliff on the west");
             if(deeper == "east"){
-                prompt("You follow the path and it leads to mt. rushmore you heard that the famous city of gold was hidden somewhere in the mountain. do you find it or continue to wander pointlessly in the forest.")
+                var mountain = prompt("You follow the path and it leads to mt. rushmore you heard that the famous city of gold was hidden somewhere in the mountain. do you find it or continue to wander pointlessly in the forest.")
+                if(mountain == 'find it'){
+                    alert('you find the city and become a billionare!! you win!!')
+                }
+                else if(deeper == 'wander'){
+                    alert('you run into a bear and get thrown off a cliff you lose!!')
+                }
+                else{
+                    alert('invalid input start over sorry');
+                    forest();
+                }
             }
         }
+            
+            
         else{
             alert("invalid entry");
             forest();
@@ -70,17 +83,21 @@
         
             var choice = prompt("you sit outside the city waiting for nightfall. you successfully sneak in and see a troll laying on the floor do you continue and ignore the sleeping troll or kill him?");
             
-        if(choice == "ignore" || "ignore him"){
-            alert("You walk past nabal and see ")
-        }
-        else if(choice == "kill" || "kill him"){
-            var dead = prompt("you smite off the trolls head with his own sword. You continue down a corridor and pass a workroom do you go in the workroom or continue on?");
-        }
         
-        
-            else{
-                mike()
+        if(choice == "kill"){
+            alert("you smite off the trolls head with his own sword. After you see your prized possesion you take them and get out congragulations you win!!");
+        }
+            else if(choice == "ignore"){
+                alert('the troll wakes up and throws you in prison you lose sorry');
+                
             }
+            else{
+                alert('invalid input');
+                mike();
+            }
+       
+        
+            
         }
         
         
