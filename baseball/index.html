@@ -11,9 +11,9 @@
 
         <div class = "container">
                 <h1>Stats</h1>
-                <label>Name:</label>
-                <input type="text" name="playerName" class="playerName">
                 
+                <label>Name:</label>
+                <input type="text" name="playerName" class="playerName" on-touch="send()">
                 <label>at bats:</label>
                 <input type="text" name="playerBats" class="playerBats">
                 
@@ -22,7 +22,8 @@
                 
                 <label>Hits:</label>
                 <input type="text" name="playerHits" required class="playerHits">
-                <button type = "submit" class = "saveInfo">Submit</button>
+                <button type = "submit" class = "saveInfo" onclick="send()">Submit</button>
         </div>
+        <script src="page1.js"></script>
     </body>
 </html>

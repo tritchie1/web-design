@@ -39,8 +39,42 @@
         var beginAdv = prompt("You and your family have been chased out of your city into the forest. Your most prized possesion is taken from you by the evil nabal. do you go south back to the city to get your prized possesion or north further away from the city.");
         
         if(beginAdv == "south"){
+         enter();   
+        }
+            
+            
+        else if (beginAdv == "north"){
+            var deeper = prompt("you continue deeper in the forest and find a path leading to the east and a river running to the north and a cliff on the west");
+            if(deeper == "east"){
+             mountRush();   
+            }
+                function mountRush(){
+                var mountain = prompt("You follow the path and it leads to mt. rushmore you heard that the famous city of gold was hidden somewhere in the mountain. do you find it or continue to wander pointlessly in the forest.")
+                if(mountain == 'find it'){
+                    alert('you find the city and become a billionare!! you win!!')
+                }
+                else if(mountain == 'wander'){
+                    alert('you run into a bear and get thrown off a cliff you lose!!')
+                }
+                else{
+                    alert('invalid input');
+                    mountRush();
+                }
+                }
+            
+        }
+            
+            
+        else{
+            alert("invalid entry");
+            forest();
+        }
+        }
+        
+        //enter function
+        function enter(){
             var city = prompt("you go back to the city and see guards everywhere do you wait until night and sneak in or try to bribe nabal?");
-                if(city == "wait"){
+                if(city == "wait" || city =="sneak in"){
                     mike();
                 }
                 else if(city == "bribe"){
@@ -49,34 +83,11 @@
                     
         }
             else{
-                alert("invalid entry amigo")
-                forest();
+                alert("invalid entry amigo");
+                enter();
+                
             }
                 
-        }
-            
-        else if (beginAdv == "north"){
-            var deeper = prompt("you continue deeper in the forest and find a path leading to the east and a river running to the north and a cliff on the west");
-            if(deeper == "east"){
-                var mountain = prompt("You follow the path and it leads to mt. rushmore you heard that the famous city of gold was hidden somewhere in the mountain. do you find it or continue to wander pointlessly in the forest.")
-                if(mountain == 'find it'){
-                    alert('you find the city and become a billionare!! you win!!')
-                }
-                else if(deeper == 'wander'){
-                    alert('you run into a bear and get thrown off a cliff you lose!!')
-                }
-                else{
-                    alert('invalid input start over sorry');
-                    forest();
-                }
-            }
-        }
-            
-            
-        else{
-            alert("invalid entry");
-            forest();
-        }
         }
 //mike function
         function mike(){
