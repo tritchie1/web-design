@@ -1,6 +1,17 @@
 header{
     color: orange;
 }
-.container{
-    text-size: 20px;
+
+table tr{
+    font-size:25px;
+    margin:20px;
+}
+table tr td{
+    padding: 20px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#number{
+    padding:15px;
+    
 }
