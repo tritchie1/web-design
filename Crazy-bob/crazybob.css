@@ -1,0 +1,188 @@
+/*global style */
+
+body{
+    margin: 0;
+	background-color: #FFEFC0;
+}
+div#wrapper {
+	margin:auto;
+	background-color: #FFF1D7;
+    width: 1024px;
+}
+header{
+    display:block;
+    width:100%;
+    height: 85px;
+    margin:0;
+    padding:0;
+    background-image: url("images/patch3.jpg");
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-family: 'Wendy One', sans-serif;
+    font-family: 'Frijole', cursive;
+}
+header h1{
+    color:black;
+    text-shadow: 1px 1px 1px grey;
+    text-align: center;
+    margin:0;
+}
+
+
+
+nav{
+    float:left;
+    width: 100%;
+    background-color:black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear:both;
+}
+nav ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    color:white;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display:block;
+    text-decoration: none;
+    color:orange;
+    text-align: center;
+    padding: 14px 16px;
+    
+}
+nav ul li a:hover{
+    color:darkgreen;
+    background-color: #FFEFC0;
+}
+
+
+
+nav .active{
+    background-color: grey;
+}
+footer{
+    text-align: center;
+    background-color:black;
+    color:white;
+}
+::selection{
+    color:green;
+    background-color:orange;
+}
+
+/*index.html style*/
+#content h2{
+    float:left;
+    width: 100%;
+    font-size: 35px;
+    margin-left:20px;
+    
+
+}
+#h2-main{
+    float:left;
+    width:60%;
+    color:black;
+    margin-left:10px;
+    margin-bottom:0;
+}
+
+#imgmain{
+    width: 250px;
+    height: 200px;
+    display: block;
+    margin:10px 10px;
+    box-shadow:10px 10px 10px grey;
+    float:left;
+
+}
+#p-main{
+    width: 640px;
+    float: left;
+    margin-left:15px;
+}
+/*about.html*/
+img#scarecrow{
+    width:400px;
+    float:right;
+    display:block;
+    margin-bottom:10px;
+    margin-right:10px;
+    
+}
+#h2-about{
+    float:left;
+    width:60%;
+}
+p#p-about{
+    float:left;
+    width:58%;
+    margin-top:0px;
+    margin-bottom:0;
+    margin-left:8px;
+}
+/*produce*/
+#h2-gallery{
+    width: 100%;
+    clear:both;
+    float:left;
+}
+figure{
+    background-color:tan;
+    width:300px;
+    float:left;
+    box-shadow:10px 10px 10px grey;
+    margin:15px;
+    align-self: center;
+    flex: 0 0 30%;
+}
+
+figure img{
+    display:block;
+    width:300px;
+    height: 150px;
+
+    margin:auto;
+}
+figcaption{
+    text-align:center;
+    margin-bottom:5px;
+}
+#gallery{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+#h2-contact{
+    color:black;
+    margin:15px;
+    float:left;
+}
+#contact-form{
+    margin-left:15px;
+    float:left;
+}
+form input{
+    margin-bottom: 8px;
+}
+#button{
+    height:50px;
+    width:150px;
+    font-size: 30px;
+}
+div#map{
+    float:right;
+    margin-top:10;
+    margin-right:20px;
+}
+.keepOpen{
+    clear:both;
+}
