@@ -1,3 +1,42 @@
+
+/* phone design*/
+@media only screen and (max-width: 600px) {
+nav {
+		padding: 8px;
+	}
+	
+	nav ul.menu {
+		list-style-type: none;
+		padding:0;
+		
+	}
+    .row{
+        padding-left:20px;
+    }
+	
+	nav ul.menu li a {
+		padding: 8px 2px;
+		margin-bottom: 8px;
+		background-color: #ff5a00;
+		font-weight: 600;
+		text-decoration: none;
+		display: block;
+		border: solid 1px #dfdfdf;
+		border-radius: 8px;
+        text-align: center
+	}
+    .coolHair{
+        width:350px;
+        height:250px;
+        padding-left: 20px;
+
+    }
+    .minuteRice{
+        margin-right: 15px;
+    }
+}
+/* phone design end*/
+
 .soccer{
     float:left;
     Height:100px;
@@ -15,13 +54,18 @@ header h1{
     color:#6ee66e;
 }
 body{
-    background-color:#09E833;
+    background-color:#d1d1d1;
 }
+/* computer design*/
+@media only screen and (min-width: 601px){
 ul.menu {
 	list-style: none;
 	margin : 0;
 	padding: 0;
 }
+    .row{
+          padding-left: 100px;
+    }
 
 ul.menu li a {
 	float: left;
@@ -35,14 +79,64 @@ ul.menu li a {
 ul.menu li a:hover {
 	color: #262621;
 }
-
+    .coolHair{
+        width:350px;
+        height:250px;
+        padding-right:14px;
+        padding-left:10px;
+        float:right;
+    }
+    .minuteRice{
+        margin-right:50px;
+    }
+}
+/* computer design end*/
 .aboutTyler{
     padding-left:25px;
     padding-top:25px;
 }
-.me{
+.introParagraph{
     font-size: 20px;
     padding-left:20px;
     color:rgba(5, 63, 142, 0.76);
+    padding-bottom: 40px;
 }
 
+.row {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100vmin;
+  grid-row-gap: 16px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+
+.contact{
+    margin-top: 80px;
+    
+}
+
+form input{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.button{
+    height:30px;
+    width:100px;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-bottom:10px;
+}
+.awardList{
+    font-size: 20px;
+    padding-bottom:150px;
+}
+#wrapper{
+    background-color: #09E833;
+    
+}
+.contact-form{
+    padding-left:12px;
+}
