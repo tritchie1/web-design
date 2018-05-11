@@ -1,119 +1,125 @@
+/*header*/
+header{
+    background-color: green;
+	border-bottom: 1px solid green;
+
+}
+header h1{
+    padding-bottom:20px;
+    text-align: center;
+    font-size:50px;
+    margin-top:0px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color:#f0f2d0;
+}
+/*header ends*/
 
 /* phone design*/
 @media only screen and (max-width: 600px) {
 nav {
 		padding: 8px;
 	}
-	
+    .column{
+        flex-direction: column;
+    }
 	nav ul.menu {
 		list-style-type: none;
 		padding:0;
 		
 	}
-    .row{
-        padding-left:20px;
-    }
 	
 	nav ul.menu li a {
 		padding: 8px 2px;
+        padding-top: 15px;
 		margin-bottom: 8px;
-		background-color: #ff5a00;
+		background-color: #00b546;
 		font-weight: 600;
+        color: white;
+        height: 30px;
 		text-decoration: none;
 		display: block;
 		border: solid 1px #dfdfdf;
 		border-radius: 8px;
         text-align: center
 	}
-    .coolHair{
-        width:350px;
-        height:250px;
+
+    .picMe{
+        width:250px;
+        display: block;
+        margin:auto;
         padding-left: 20px;
 
     }
-    .minuteRice{
-        margin-right: 15px;
-    }
+
 }
 /* phone design end*/
-
-.soccer{
-    float:left;
-    Height:100px;
-    width:100px;
-}
-header{
-    background-color:#097AFF;
-}
-header h1{
-    padding-bottom:40px;
-    text-align: center;
-    font-size:50px;
-    margin-top:0px;
-    margin-bottom: 10px;
-    color:#6ee66e;
-}
-body{
-    background-color:#d1d1d1;
-}
 /* computer design*/
 @media only screen and (min-width: 601px){
+    Nav{
+        background-color: #567D8C;
+    }
+    
 ul.menu {
 	list-style: none;
 	margin : 0;
 	padding: 0;
 }
-    .row{
-          padding-left: 100px;
-    }
 
 ul.menu li a {
 	float: left;
 	color: #0058ff;
-    font-size: 25px;
+    font-size: 22px;
 	padding: .2em 1em;
 	text-decoration: none;
 	border-right: 1px solid #4c6c73
 }
 
-ul.menu li a:hover {
-	color: #262621;
-}
-    .coolHair{
-        width:350px;
-        height:250px;
+    .picMe{
+        width:250px;
         padding-right:14px;
         padding-left:10px;
         float:right;
     }
-    .minuteRice{
-        margin-right:50px;
+
+    ul.menu li a:hover {
+	color: #262621;
+    }
+    ul.menu li.active a{
+	color: deepskyblue;
     }
 }
 /* computer design end*/
+/* index page*/
 .aboutTyler{
     padding-left:25px;
-    padding-top:25px;
 }
 .introParagraph{
     font-size: 20px;
     padding-left:20px;
-    color:rgba(5, 63, 142, 0.76);
-    padding-bottom: 40px;
+    color:black;
 }
-
+/* index page ends*/
+/*portfolio page*/
 .row {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 100vmin;
   grid-row-gap: 16px;
-  margin: 0 auto;
   padding-bottom: 10px;
 }
-
-
+.column{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.portfolio{
+    padding-top:30px;
+}
+/*portfolio page ends*/
+/*Contact page*/
 .contact{
-    margin-top: 80px;
+    margin-top: 40px;
     
 }
 
@@ -129,14 +135,66 @@ form input{
     border-radius: 8px;
     margin-bottom:10px;
 }
+/*Contact page*/
+/*award page*/
 .awardList{
     font-size: 20px;
     padding-bottom:150px;
 }
-#wrapper{
-    background-color: #09E833;
-    
-}
 .contact-form{
     padding-left:12px;
 }
+/*award page ends*/
+
+/* Content/wrapper*/
+body{
+    background-color: beige;
+}
+#wrapper{
+    margin:0 auto;
+    max-width: 1200px;
+	background-color: #F0F0E8;
+	box-shadow: 0 0 10px #777
+}
+div#content {
+	padding: 1em 2% .5em 2%;
+}
+
+div#content h1{
+	font-size:35px;
+	color: #cb0000;
+    text-align: center;
+	font-weight: 600;
+	border-bottom: 2px solid LightSlateGrey;
+	margin-bottom: .4em;	
+}
+
+div#content p {
+	line-height: 150%;
+	padding-bottom: .8em;
+	
+}
+
+
+div#content a {
+	color: #4c6c73;
+}
+
+div#content a:hover{
+	color: #80045f;
+}
+
+/*end content*/
+/*footer*/
+footer {
+	background-color:green;
+	clear: both;
+	padding: .5em;
+	font-size: .8em;
+	color: #f0f2d0;
+}
+
+footer p {
+	text-align: center;
+}
+/*end footer*/
